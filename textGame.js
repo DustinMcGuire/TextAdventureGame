@@ -34,3 +34,40 @@ OR
 ${enter}`;
 const gameOver5 = `You looked at the trap and the light BLINDED YOU! ${gameOver}`;
 const win = `The ghost trap sucked Slimer in and closed. CONGRATULATIONS! YOU CAUGHT SLIMER!!!`;
+
+// Alertys the user to start the game
+alert(start);
+
+// Sets the value of userInput to the number the user enters
+let userInput = prompt(q1);
+
+// 1st conditional statement
+if (userInput == 1) {
+    userInput = prompt(q2);
+    // 2nd conditional statement
+    if (userInput == 1) {
+        userInput = prompt(q3);
+        // 3rd conditional statement
+        if (userInput == 2) {
+            userInput = prompt(q4);
+            // 4th conditional statement
+            if (userInput == 1) {
+                userInput = prompt(q5);
+                //    5th conditional statement
+                if (userInput == 2) {
+                    alert(win);
+                } else {
+                    alert(gameover5);
+                }
+            } else {
+                alert(gameover4);
+            }
+        } else {
+            alert(gameOver3);
+        }
+    } else {
+        alert(gameOver2);
+    }
+} else {
+    alert(gameOver1);
+}
